@@ -9,3 +9,13 @@
 #     3
 #     -> 1
 
+from random import randint
+n = int(input("Количество элементов массива: ")) 
+a = [randint(1, 11) for i in range(n)] 
+print(a) 
+x = int(input("Какое число будем искать? ")) 
+count = 0 
+for i in a:
+ if i == x:  
+  count += 1 
+print(count) 
